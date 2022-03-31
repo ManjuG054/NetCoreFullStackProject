@@ -7,7 +7,9 @@ namespace DataAccessLayer
     {
         static void Main(string[] args)
         {
-
+            double n = 123.123456789123456F;
+            Console.Write("Hello\n");
+            Console.Write(n);
         }
 
         public static string AccessDb()
