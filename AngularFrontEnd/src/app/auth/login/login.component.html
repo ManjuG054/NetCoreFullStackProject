@@ -1,3 +1,13 @@
-<p>login works!</p>
-
-<button (click)="login()">Login</button>
+<div class="login-container">
+  <div>
+    <form class="login-wrapper">
+      <label for="userName">User Name</label>
+      <input name="userName" placeholder="Enter UserName" id="userName" [(ngModel)]="userName" type="text" required />
+      <br />
+      <label for="password">Password</label>
+      <input name="password" placeholder="Enter Password" type="password" id="password" [(ngModel)]="password" required />
+      <br />
+      <button (click)="login()">Login</button>
+    </form>
+  </div>
+</div>

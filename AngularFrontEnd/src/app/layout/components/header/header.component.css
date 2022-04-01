@@ -7,18 +7,24 @@
   color: white;
 }
 
-ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-li {
-    list-style: none;
+.button-wrapper {
+  line-height: 8vh;
+  width: 100vw;
 }
 
 button {
-    width: auto;
-    height: auto;
-    line-height: 30px;
+  width: auto;
+  height: auto;
+}
+
+.home-button {
+
+}
+
+.profile-button {
+
+}
+
+.cart-button {
+
 }
