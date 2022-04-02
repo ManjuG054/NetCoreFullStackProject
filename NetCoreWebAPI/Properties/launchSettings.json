@@ -22,7 +22,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "ecommerce/products",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -1,0 +1,38 @@
+use SampleDb
+
+SELECT * FROM productsTable
+
+DELETE FROM productsTable Where productId > 0
+
+INSERT INTO productsTable (productName, productImage, productDescription, productCount, productPrice)
+VALUES ('Bread', 'bread.png', 'this is bread', 50, 100);
+
+INSERT INTO productsTable (productName, productImage, productDescription, productCount, productPrice)
+VALUES ('Milk', 'milk.png', 'this is milk', 50, 50);
+
+INSERT INTO productsTable (productName, productImage, productDescription, productCount, productPrice)
+VALUES ('Pizza', 'pizza.png', 'this is pizza', 50, 300);
+
+INSERT INTO productsTable (productName, productImage, productDescription, productCount, productPrice)
+VALUES ('Ice Cream', 'icecream.png', 'this is ice cream', 500, 30);
+
+INSERT INTO productsTable (productName, productImage, productDescription, productCount, productPrice)
+VALUES ('Chocolate', 'chocolate.png', 'this is ice cream', 500, 80);
+
+INSERT INTO productsTable (productName, productImage, productDescription, productCount, productPrice)
+VALUES ('Mysore Pak', 'mysorepak.png', 'this is Mysore Pak', 500, 10);
+
+INSERT INTO productsTable (productName, productImage, productDescription, productCount, productPrice)
+VALUES ('Pasta', 'pasta.png', 'this is pasta', 200, 125);
+
+INSERT INTO productsTable (productName, productImage, productDescription, productCount, productPrice)
+VALUES ('Cookie', 'cookie.png', 'this is cookie', 200, 8);
+
+INSERT INTO productsTable (productName, productImage, productDescription, productCount, productPrice)
+VALUES ('Biscuits', 'biscuits.png', 'these are biscuits', 200, 10);
+
+UPDATE productsTable set productCount = 0 where productId = 11
+
+UPDATE productsTable set productCount = 5 where productId = 3
+
+DELETE FROM productsTable Where productId = 11

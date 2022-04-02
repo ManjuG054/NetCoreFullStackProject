@@ -9,12 +9,20 @@
 
 .button-wrapper {
   line-height: 8vh;
-  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.right-button-wrapper {
+    gap: 20px;
 }
 
 button {
   width: auto;
   height: auto;
+  line-height: 25px;
 }
 
 .home-button {
@@ -26,5 +34,12 @@ button {
 }
 
 .cart-button {
+    margin-left: 20px;
+}
 
+.cart-count {
+  background: green;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
 }

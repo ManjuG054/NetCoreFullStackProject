@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EcommerceService } from '../../../core/commonServices/ecommerce.service';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  cartCount = 0;
+  constructor(private ecommService: EcommerceService) { }
 
   ngOnInit(): void {
+    this.ecommService.cartCount.subscribe((itemsCount: number) => { this.cartCount = itemsCount})
+  }
+
+  sendSearchText(searchText: string) {
+    this.ecommService.itemSearh.next(searchText);
   }
 
 }

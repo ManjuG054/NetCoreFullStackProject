@@ -1,7 +1,14 @@
 <div class="header-wrapper">
   <div class="button-wrapper">
+    <div class="left-button-wrapper">
       <button class="home-button" routerLink="/layout">Home</button>
-      <button class="profile-button" routerLink="/layout/profile">Profile</button>
-      <button class="cart-button" routerLink="/layout/cart">Cart</button>
+    </div>
+    <div class="searchBox">
+      <input type="search" (input)="sendSearchText(input.value)" #input />
+    </div>
+      <div class="right-button-wrapper">
+        <button class="profile-button" routerLink="/layout/profile">Profile</button>
+        <button class="cart-button" routerLink="/layout/cart">Cart <span *ngIf="cartCount" class="cart-count">{{cartCount}}</span></button>
+      </div>
   </div>
 </div>

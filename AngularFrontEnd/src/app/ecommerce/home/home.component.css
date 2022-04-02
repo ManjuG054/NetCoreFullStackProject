@@ -22,8 +22,8 @@
   margin: 25px;
   display: flex;
   align-items: center;
-  /*min-height: 250px;
-  max-height: 250px;*/
+  min-height: 300px;
+  max-height: 300px;
   padding: 10px;
 }
 
@@ -97,11 +97,12 @@ img {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 80%;
+  width: max-content;
 }
 
   .cart-button:disabled {
-    cursor: default;
+    cursor: not-allowed;
+    background-color: dimgrey;
   }
 
   .cart-button:focus {
@@ -139,7 +140,6 @@ img {
 }
 
   .count-button:disabled {
-    cursor: default;
   }
 
   .count-button:focus {
