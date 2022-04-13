@@ -1,0 +1,147 @@
+.product-container {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+}
+
+.product-wrapper {
+    width: 100%;
+    height: 88vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 150px;
+    flex-wrap: wrap;
+}
+
+.product {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  flex-basis: calc(25% - 25px);
+  min-width: 500px;
+  flex-shrink: 1;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+  max-height: 300px;
+  padding: 10px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  filter: drop-shadow(1px 17px 10px grey);
+}
+
+.detail-container {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 25px;
+}
+
+.product-description {
+  font-size: 15px;
+}
+
+.product-price {
+  font-size: 25px;
+}
+
+.product-count-wrapper {
+  display: flex;
+}
+
+.product-cart {
+  display: flex;
+}
+
+.product-count{
+    width: 40px;
+    height: 20px;
+}
+
+.p-count{
+    min-width: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+}
+
+.cart-button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: max-content;
+}
+
+  .cart-button:disabled {
+    cursor: not-allowed;
+    background-color: dimgrey;
+  }
+
+  .cart-button:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }
+
+.count-button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: orange;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 70%;
+}
+
+  .count-button:disabled {
+  }
+
+  .count-button:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }

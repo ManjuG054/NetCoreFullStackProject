@@ -1,0 +1,8 @@
+.footer-wrapper {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  height: 4vh;
+  background-color: cornflowerblue;
+  color: white;
+}

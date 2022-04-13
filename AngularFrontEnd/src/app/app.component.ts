@@ -12,7 +12,12 @@ export class AppComponent {
   length: any;
   constructor(private http: HttpClient) {
     try {
-      http.get('http://localhost:90/weatherforecast', { responseType: 'text' }).subscribe((res: any) => {
+      //http.get('http://localhost:90/weatherforecast', { responseType: 'text' }).subscribe((res: any) => {
+      //  console.log(res.length);
+      //  this.response = res;
+      //});
+
+      http.get('http://localhost:90/ecommerce/products', { responseType: 'json' }).subscribe((res: any) => {
         console.log(res.length);
         this.response = res;
       });

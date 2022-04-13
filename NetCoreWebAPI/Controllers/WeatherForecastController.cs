@@ -1,4 +1,4 @@
-using DataAccessLayer;
+//using DataAccessLayer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication3.Controllers
@@ -11,7 +11,7 @@ namespace WebApplication3.Controllers
         [HttpGet]
         public string Get()
         {
-            return ConnectToDatabase.AccessDb();
+            return DataAccessLayer.ConnectToDatabase.AccessDb();
         }
     }
 }
